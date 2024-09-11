@@ -37,6 +37,8 @@ def sorted_words(data: str) -> list:
 if __name__ =="__main__": 
     import sys, os
 
+    assert sys.version_info >= (3, 9), 'Use Python 3.9 or newer'
+
     path = os.path.join(os.getcwd(), 'words.json') if len(sys.argv) == 1 else sys.argv[1]
 
     data = read_file(path)
