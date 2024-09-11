@@ -1,7 +1,7 @@
 import os
 from process_words import read_file, words_and_lengths, odd_words, sorted_words
 
-path = os.path.join(os.getcwd(),'words2.json')                    
+path = os.path.join(os.getcwd(),'words.json')                    
 data = read_file(path)
 odd_w = [e[0] for e in odd_words(data)]
 sorted_w = sorted_words(data)
